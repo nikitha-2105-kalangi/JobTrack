@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JobTrack - Add Application</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <h1>JobTrack</h1>
+
+            <p>Add Job Application</p>
+
+        </div>
+
+        <button
+            type="button"
+            onclick="window.location.href='dashboard.html'">
+
+            Back to Dashboard
+
+        </button>
+
+    </header>
+
+
+    <main class="application-page">
+
+        <section class="application-form-container">
+
+            <h2 id="formTitle">Add Job Application</h2>
+
+            <p class="subtitle">
+                Enter the details of the job you applied for.
+            </p>
+
+
+            <form id="jobForm">
+
+                <!-- Company -->
+
+                <div class="form-group">
+
+                    <label for="company">
+                        Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        placeholder="e.g. Google"
+                        required>
+
+                </div>
+
+
+                <!-- Job Title -->
+
+                <div class="form-group">
+
+                    <label for="jobTitle">
+                        Job Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder="e.g. Software Engineer Intern"
+                        required>
+
+                </div>
+
+
+                <!-- Location -->
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="e.g. Bangalore">
+
+                </div>
+
+
+                <!-- Job Type -->
+
+                <div class="form-group">
+
+                    <label for="jobType">
+                        Job Type
+                    </label>
+
+                    <select id="jobType">
+
+                        <option value="Full-Time">
+                            Full-Time
+                        </option>
+
+                        <option value="Part-Time">
+                            Part-Time
+                        </option>
+
+                        <option value="Internship">
+                            Internship
+                        </option>
+
+                        <option value="Contract">
+                            Contract
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Status -->
+
+                <div class="form-group">
+
+                    <label for="status">
+                        Application Status
+                    </label>
+
+                    <select id="status">
+
+                        <option value="Applied">
+                            Applied
+                        </option>
+
+                        <option value="Interview">
+                            Interview
+                        </option>
+
+                        <option value="Selected">
+                            Selected
+                        </option>
+
+                        <option value="Rejected">
+                            Rejected
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Application Date -->
+
+                <div class="form-group">
+
+                    <label for="applicationDate">
+                        Application Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="applicationDate"
+                        required>
+
+                </div>
+
+
+                <!-- Interview Date -->
+
+                <div class="form-group">
+
+                    <label for="interviewDate">
+                        Interview Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="interviewDate">
+
+                </div>
+
+
+                <!-- Follow-up Date -->
+
+                <div class="form-group">
+
+                    <label for="followUpDate">
+                        Follow-up Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="followUpDate">
+
+                </div>
+
+
+                <!-- Job Link -->
+
+                <div class="form-group">
+
+                    <label for="jobLink">
+                        Job Link
+                    </label>
+
+                    <input
+                        type="url"
+                        id="jobLink"
+                        placeholder="https://example.com/job">
+
+                </div>
+
+
+                <!-- Notes -->
+
+                <div class="form-group">
+
+                    <label for="notes">
+                        Notes
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        rows="4"
+                        placeholder="Add any important notes...">
+                    </textarea>
+
+                </div>
+
+
+                <button type="submit" id="saveJobButton">
+                            Save Application
+                </button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

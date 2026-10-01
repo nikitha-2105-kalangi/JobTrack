@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobTrack - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===============================
+         HEADER
+    ================================ -->
+
+    <header class="dashboard-header">
+
+        <div class="brand-section">
+            <h1>JobTrack</h1>
+            <p id="welcomeMessage">Welcome!</p>
+        </div>
+
+        <button id="logoutButton" class="logout-button">
+            Logout
+        </button>
+
+    </header>
+
+
+    <!-- ===============================
+         MAIN DASHBOARD
+    ================================ -->
+
+    <main class="dashboard">
+
+        <!-- Introduction -->
+
+        <section class="dashboard-intro">
+
+            <div>
+                <h2>Job Application Dashboard</h2>
+
+                <p>
+                    Track, organize and manage your job applications
+                    in one place.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ===============================
+             STATISTICS
+        ================================ -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📋</div>
+
+                <div>
+                    <h3>Total Applications</h3>
+                    <p id="totalApplications">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📨</div>
+
+                <div>
+                    <h3>Applied</h3>
+                    <p id="appliedApplications">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🎯</div>
+
+                <div>
+                    <h3>Interviews</h3>
+                    <p id="interviewApplications">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🎉</div>
+
+                <div>
+                    <h3>Selected</h3>
+                    <p id="selectedApplications">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">❌</div>
+
+                <div>
+                    <h3>Rejected</h3>
+                    <p id="rejectedApplications">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        </section>
+
+
+        <!-- Upcoming Activities -->
+
+        <section class="upcoming-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Upcoming Activities</h2>
+
+                    <p>
+                        Keep track of your upcoming interviews and follow-ups.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="upcoming-grid">
+
+                <div class="upcoming-card">
+
+                    <div class="upcoming-icon">
+                        🎯
+                    </div>
+
+                    <div>
+                        <h3>Upcoming Interviews</h3>
+
+                        <p id="upcomingInterviews">
+                            No upcoming interviews.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="upcoming-card">
+
+                    <div class="upcoming-icon">
+                        📅
+                    </div>
+
+                    <div>
+                        <h3>Upcoming Follow-ups</h3>
+
+                        <p id="upcomingFollowUps">
+                            No upcoming follow-ups.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="applications-section">
+
+        <!-- ===============================
+             APPLICATIONS
+        ================================ -->
+
+        <section class="applications-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>My Applications</h2>
+
+                    <p>
+                        View and manage all your job applications.
+                    </p>
+                </div>
+
+            <button
+                class="add-job-button"
+                onclick="addNewJob()">
+
+                + Add Job
+
+            </button>
+
+            </div>
+
+
+            <!-- Search & Filter -->
+
+            <div class="application-filters">
+
+                <input
+                    type="text"
+                    id="searchApplications"
+                    placeholder="🔍 Search company or job title..."
+                >
+
+                <select id="filterStatus">
+
+                    <option value="All">
+                        All Status
+                    </option>
+
+                    <option value="Applied">
+                        Applied
+                    </option>
+
+                    <option value="Interview">
+                        Interview
+                    </option>
+
+                    <option value="Selected">
+                        Selected
+                    </option>
+
+                    <option value="Rejected">
+                        Rejected
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Applications -->
+
+            <div
+                id="applicationsList"
+                class="applications-list">
+
+                <!-- Applications will appear here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

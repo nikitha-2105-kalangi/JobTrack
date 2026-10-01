@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <!-- Left Side -->
+        <section class="auth-image">
+            <div>
+                <h1>Start Your Journey</h1>
+                <p>
+                    Create your JobTrack account
+                    and organize your job search
+                    in one place.
+                </p>
+            </div>
+        </section>
+
+        <!-- Right Side -->
+        <section class="auth-form">
+
+            <h2>Create Account</h2>
+            <p class="subtitle">Join JobTrack today</p>
+
+            <form id="signupForm" novalidate>
+
+                <label for="signupName">Full Name</label>
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="signupEmail">Email</label>
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <small id="emailError" class="error-message"></small>
+
+                <small id="existingEmailError" class="error-message"></small>
+
+                <label for="signupPassword">Password</label>
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <small id="passwordError" class="error-message"></small>
+               
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+                 <small id="confirmPasswordError" class="error-message"></small>
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+
+            <p class="switch-page">
+                Already have an account?
+                <a href="index.html">Login</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

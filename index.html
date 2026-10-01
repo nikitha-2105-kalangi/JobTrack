@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <!-- Left Side -->
+        <section class="auth-image">
+            <div>
+                <h1>JobTrack</h1>
+                <p>
+                    Organize your job applications,
+                    track your progress and stay on top
+                    of your career journey.
+                </p>
+            </div>
+        </section>
+
+        <!-- Right Side -->
+        <section class="auth-form">
+
+            <h2>Welcome Back!</h2>
+            <p class="subtitle">Login to your JobTrack account</p>
+
+            <form id="loginForm">
+
+                <label for="loginEmail">Email</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">Login</button>
+
+            </form>
+
+            <p class="switch-page">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
